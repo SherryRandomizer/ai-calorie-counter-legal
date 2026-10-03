@@ -1,103 +1,98 @@
-# Privacy Policy — AI Calorie Counter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — AI Calorie Counter</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  p, li { font-size: 15px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 24px; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
 
-**Last updated:** August 13, 2026
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: October 3, 2026</p>
 
-This Privacy Policy explains how AI Calorie Counter ("the App," "we," "us," or "our") collects, uses, stores, and protects your information when you use our mobile application.
+<p>AI Calorie Counter ("we", "our", "the app") is developed by Shoaib Jamil, based in Rawalpindi, Pakistan. This Privacy Policy explains what information the app collects, how it is used, and the choices you have.</p>
 
-By creating an account or using the App, you agree to the collection and use of information in accordance with this policy.
+<h2>Information We Collect</h2>
 
----
+<h2>1. Account Information</h2>
+<ul>
+  <li>Email address (used to create and sign in to your account)</li>
+  <li>Password (stored securely via Firebase Authentication; we never see your plain-text password)</li>
+</ul>
 
-## 1. Information We Collect
+<h2>2. Health and Fitness Information</h2>
+<p>To provide personalized nutrition tracking, the app collects information you choose to provide, including:</p>
+<ul>
+  <li>Weight, height, age, gender, activity level, and weight goals</li>
+  <li>Body measurements (waist, chest, hips, arms, thighs) if you choose to log them</li>
+  <li>Meals you log, including photos of food, text/voice descriptions, nutrition values, and timestamps</li>
+  <li>Water intake, fasting session history, and supplement/vitamin intake you choose to track</li>
+  <li>Notes you add to logged meals</li>
+</ul>
+<p>This information is used solely to calculate your personalized calorie and macronutrient goals, track your progress, and power the app's AI-based suggestions. It is never sold.</p>
 
-### 1.1 Information You Provide Directly
-- **Account information:** Email address and password (when you sign up with email/password authentication).
-- **Profile information:** Weight, height, age, gender, activity level, weight goal, and goal weight, which you enter during onboarding or edit later in your Profile.
-- **Meal data:** Food photos you take or upload, the food names, meal types, and nutrition values (calories, protein, carbs, fat, fiber, sugar, sodium) associated with each meal you log — including any manual edits you make to AI-generated results.
-- **Water intake:** The number of glasses of water you log each day.
-- **Notification preferences:** Which reminder types you have enabled (breakfast, lunch, dinner, water, weekly weight check-in, daily streak) and their scheduled times.
+<h2>3. Photos and AI Analysis</h2>
+<p>When you take or upload a photo of food, a fridge/pantry, or a barcode, the image is sent securely to our backend service, which forwards it to OpenAI's API for analysis (identifying food and estimating nutrition, or identifying ingredients for recipe suggestions). Barcode scans are also checked against the free, open Open Food Facts database. Photos are processed for this purpose and are not permanently stored by us beyond what's needed to complete your request, unless you choose to save a meal (in which case only the resulting nutrition data — not the photo itself — is stored in your account).</p>
 
-### 1.2 Information Collected Automatically
-- **Usage and analytics data:** App opens, screen views, meal scans performed, and other in-app events, collected via Firebase Analytics.
-- **Crash and diagnostic data:** Crash reports and performance diagnostics, collected via Firebase Crashlytics, to help us fix bugs.
-- **Device and advertising identifiers:** Your device's advertising ID and general device information, used to serve and measure ads via Google AdMob (free-tier users only).
+<h2>4. Microphone (Voice Input)</h2>
+<p>If you use voice input to describe a meal, your device's speech-to-text engine processes your speech locally/on-device to produce text, which you can review and edit before it's analyzed. We do not store audio recordings.</p>
 
-### 1.3 Information From Third-Party Services
-- **Food photo analysis:** When you take or upload a food photo, the image is sent to OpenAI's API (GPT-4o-mini vision model) to identify the food and estimate its nutrition content. OpenAI processes this image to generate a response but the App does not control OpenAI's independent data retention practices. See OpenAI's privacy policy at https://openai.com/policies/privacy-policy for details on how they handle API data.
+<h2>5. Location</h2>
+<p>With your permission, the app uses your device's approximate location to fetch local weather data, which is used to adjust your daily water intake goal on hot days. Location is only used for this purpose and is not stored or shared.</p>
 
----
+<h2>6. Device and Usage Information</h2>
+<ul>
+  <li>Advertising ID — used to serve ads via Google AdMob (see "Advertising" below)</li>
+  <li>App usage analytics (via Firebase Analytics) — helps us understand how the app is used so we can improve it</li>
+  <li>Crash and error reports (via Firebase Crashlytics) — helps us identify and fix bugs</li>
+</ul>
 
-## 2. How We Use Your Information
+<h2>How We Use Your Information</h2>
+<ul>
+  <li>To provide and personalize the app's core features (calorie/macro tracking, AI meal analysis, progress charts, reminders, and more)</li>
+  <li>To improve the app's reliability and performance</li>
+  <li>To display advertisements (free tier only)</li>
+</ul>
 
-We use the information described above to:
-- Create and manage your account.
-- Calculate your personalized daily calorie and macronutrient goals.
-- Analyze food photos and generate nutrition estimates.
-- Save, display, and let you edit your meal history and daily progress.
-- Send you the reminder notifications you've enabled.
-- Show relevant ads to free-tier users, and determine premium/ad-free status for subscribers.
-- Monitor app performance, diagnose crashes, and improve the App over time.
-- Communicate with you about your account or important App updates, if necessary.
+<h2>Data Storage and Security</h2>
+<p>Your data is stored securely using Google Firebase (Firestore database and Firebase Authentication), a widely used and secure cloud platform. We have taken additional steps to protect your data and our systems, including Firebase App Check (which verifies that requests come from the genuine app) and routing AI requests through a secure backend that never exposes API keys to the app itself.</p>
 
-We do **not** sell your personal information to third parties.
+<h2>Advertising</h2>
+<p>Free-tier users may see ads served through Google AdMob. AdMob may collect your advertising ID and other technical information to serve relevant ads. You can review Google's practices at their <a href="https://policies.google.com/technologies/ads" target="_blank">Advertising Policy</a>.</p>
 
----
+<h2>Third-Party Services</h2>
+<p>The app uses the following third-party services, each with their own privacy practices:</p>
+<ul>
+  <li>Google Firebase (authentication, database, analytics, crash reporting, app verification)</li>
+  <li>Google AdMob (advertising)</li>
+  <li>OpenAI (food/ingredient recognition and nutrition estimation, accessed via our secure backend — OpenAI does not receive your account information, only the image or text needed to complete your request)</li>
+  <li>Open Food Facts (free, open barcode/product database)</li>
+  <li>Open-Meteo / weather data providers (for location-based water goal adjustments)</li>
+</ul>
 
-## 3. How We Store and Protect Your Information
+<h2>Your Choices</h2>
+<ul>
+  <li>You can edit or delete any meal, weight entry, or other logged data at any time within the app.</li>
+  <li>You can export your data (meals, weight, water history) as CSV files from Profile → Settings.</li>
+  <li>You can permanently delete your account and all associated data from Profile → Settings → Delete Account. This action is irreversible.</li>
+  <li>You can revoke camera, microphone, or location permissions at any time via your device settings; the relevant features will simply be unavailable until re-granted.</li>
+</ul>
 
-- Your account and meal data are stored in **Google Cloud Firestore**, secured with Firebase Authentication and Firestore security rules that ensure only you can read or write your own data.
-- Data is transmitted using industry-standard encryption (HTTPS/TLS) between your device and our servers.
-- While we take reasonable steps to protect your information, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.
+<h2>Children's Privacy</h2>
+<p>This app is not directed at children under 13, and we do not knowingly collect personal information from children under 13.</p>
 
----
+<h2>Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time as the app evolves. Changes will be posted on this page with an updated "Last updated" date.</p>
 
-## 4. Third-Party Services We Use
+<h2>Contact Us</h2>
+<p>If you have questions about this Privacy Policy or your data, please contact us at: <strong>shoaibjamil85@gmail.com</strong></p>
 
-The App relies on the following third-party services, each with its own privacy practices:
-
-| Service | Purpose | Privacy Policy |
-|---|---|---|
-| Firebase (Google) | Authentication, database, analytics, crash reporting, cloud messaging | https://firebase.google.com/support/privacy |
-| OpenAI | Food photo analysis (GPT-4o-mini vision) | https://openai.com/policies/privacy-policy |
-| Google AdMob | Advertising (free-tier users) | https://policies.google.com/privacy |
-| RevenueCat *(if/when enabled)* | Subscription and purchase management | https://www.revenuecat.com/privacy |
-
----
-
-## 5. Your Choices and Rights
-
-- **Access and edit:** You can view and edit your profile stats, meal history, and notification preferences at any time within the App.
-- **Delete your data:** You may request full deletion of your account and associated data by contacting us at shoaibjamil85@gmail.com. 
-- **Notifications:** You can disable any or all reminder notifications from the Profile screen at any time.
-- **Ads:** Upgrading to Premium removes ads and unlocks ad-free use.
-- **Opt out of analytics:** Where required by applicable law, you may request that analytics collection be limited; contact us using the details below.
-
----
-
-## 6. Children's Privacy
-
-The App is not directed at children under 13 (or the minimum age required by your country's law), and we do not knowingly collect personal information from children under this age. If we learn that we have inadvertently collected such information, we will delete it promptly. If you believe a child has provided us with personal information, please contact us.
-
----
-
-## 7. International Users
-
-If you use the App from outside the country where our servers are located, your information will be transferred to, stored, and processed in that country. By using the App, you consent to this transfer.
-
----
-
-## 8. Changes to This Policy
-
-We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last updated" date at the top of this page, and, where appropriate, through an in-app notice.
-
----
-
-## 9. Contact Us
-
-If you have questions about this Privacy Policy or how we handle your data, contact us at:
-
-**Email:** shoaibjamil85@gmail.com
-
----
-
-
+</body>
+</html>
