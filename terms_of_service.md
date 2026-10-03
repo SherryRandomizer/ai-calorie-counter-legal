@@ -1,6 +1,6 @@
 # Terms of Service — AI Calorie Counter
 
-**Last updated:** August 13, 2026
+**Last updated:** [INSERT DATE BEFORE PUBLISHING]
 
 Please read these Terms of Service ("Terms") carefully before using AI Calorie Counter ("the App," "we," "us," or "our"). By creating an account or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.
 
@@ -105,7 +105,7 @@ We may update these Terms from time to time. Continued use of the App after chan
 
 ## 13. Governing Law
 
-These Terms shall be governed by the laws of Pakistan, without regard to its conflict of law provisions.
+These Terms shall be governed by the laws of [INSERT YOUR COUNTRY/STATE], without regard to its conflict of law provisions.
 
 ---
 
@@ -113,8 +113,8 @@ These Terms shall be governed by the laws of Pakistan, without regard to its con
 
 If you have questions about these Terms, contact us at:
 
-**Email:** shoaibjamil85@gmail.com
+**Email:** [INSERT SUPPORT EMAIL]
 
 ---
 
-
+> **Note for the developer (remove before publishing):** Replace bracketed placeholders with your real details. Section 13 (Governing Law) should reflect where you or your business is legally based — consult a local lawyer if unsure. Both this document and the Privacy Policy must be hosted at live, public URLs for app store submission.
